@@ -64,6 +64,11 @@ public class Player {
     public void setPoints(int points) {
         this.points = points;
     }
+
+    @Override
+    public String toString() {
+        return "Player{" + "playerID=" + playerID + ", playerName=" + playerName + ", team=" + team + ", courtPosition=" + courtPosition + ", points=" + points + '}';
+    }
     
     
     
