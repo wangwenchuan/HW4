@@ -10,9 +10,10 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>NBA Players</title>
+        <link rel="stylesheet" type="text/css" href="./css/format.css"/>
     </head>
     <body>
-        <h1>NBA Players Database</h1>
+        <h1 > NBA Players Database</h1>
         <a href= "read"> View All Players</a>
     </body>
 </html>

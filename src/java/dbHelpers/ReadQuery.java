@@ -63,8 +63,18 @@ public class ReadQuery {
         
          public String getHTMLtable(){
         String table="";
-        table += "<table border=1>";
+        table += "<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/format.css\"/> <table>";
+        table +="<tr>";
+        table +="<th>PlayerID</th>";
+        table +="<th>TeamPlayer Name</th>";
+        table +="<th>Team</th>";
+        table +="<th>Position</th>";
+        table +="<th>Points</th>";
+        table +="<th>   </th>";
         
+        
+        
+        table +="</tr>";
         try {
             while (this.results.next()){
                 Player player =new Player();
@@ -94,6 +104,10 @@ public class ReadQuery {
                 
                 table +="<td>";
                 table += player.getPoints();      
+                table +="</td>";
+                
+                table +="<td class= \"delete\">";
+                table += "<a href=delete?playerID=" + player.getPlayerID()+ "> Delete </a>";
                 table +="</td>";
                 
                 
