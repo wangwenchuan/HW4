@@ -1,6 +1,6 @@
 <%-- 
-    Document   : read
-    Created on : Oct 9, 2016, 8:29:41 PM
+    Document   : search
+    Created on : Oct 22, 2016, 11:24:32 PM
     Author     : Wenchuan
 --%>
 
@@ -9,11 +9,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>NBA Players</title>
+        <title>Search Players</title>
         <link rel="stylesheet" type="text/css" href="./css/format.css"/>
-
-        <% String table = (String) request.getAttribute("table");%>    
-
     </head>
     <body>
         <div class="wrap">  <!--div to hold all other divs-->
@@ -25,11 +22,15 @@
 
             <!--main-->    
             <div class="main">  <!--div main-->
-                <h1> NBA Players</h1>
-                <br><br>
+                <h1>Search Players</h1>
+                <form name="searchForm" action="search" method="get">
 
-                <%= table%>
-               
+                    <input type="text" name="searchVal" value=""/> 
+                    <br><br>
+                    <input type="submit" name="submit"   value="Submit" />  
+
+
+                </form>
             </div><!--close the main div-->
 
             <!--footer-->

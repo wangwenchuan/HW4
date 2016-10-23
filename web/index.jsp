@@ -13,7 +13,23 @@
         <link rel="stylesheet" type="text/css" href="./css/format.css"/>
     </head>
     <body>
-        <h1 > NBA Players Database</h1>
-        <a href= "read"> View All Players</a>
+        <div class="wrap">  <!--div to hold all other divs-->
+            <!--header-->
+            <%@include file="includes/header.jsp" %>
+
+            <!--menu-->
+            <%@include file="includes/menu.jsp" %>
+
+            <!--main-->    
+            <div class="main">  <!--div main-->
+
+                <h1 > NBA Players Database</h1>
+                
+
+            </div><!--close the main div-->
+
+            <!--footer-->
+            <%@include file="includes/footer.jsp" %>
+        </div><!--close the wrap div-->
     </body>
 </html>
